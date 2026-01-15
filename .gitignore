@@ -1,0 +1,19 @@
+# Ignore sensitive keys
+.env
+
+# Ignore Student Photos (Privacy)
+server/dataset/
+server/intruders/
+
+# Ignore local logs and data
+logs/*.csv
+*.xlsx
+
+# Ignore Python's temporary processing files
+__pycache__/
+*.pyc
+.DS_Store
+
+# Ignore Virtual Environments
+venv/
+env/
