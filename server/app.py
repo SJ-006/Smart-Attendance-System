@@ -1,7 +1,7 @@
 import sys
 import os
 # Add the root directory to the python path so it can find config.py
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from flask import Flask, request, jsonify
 from database_mgr import log_attendance, save_intruder_photo, initialize_folders
 from processor import AttendanceProcessor
