@@ -6,8 +6,13 @@ import time
 
 # Add parent directory to path to import local config
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from config import SERVER_URL, API_SECRET_KEY
+from config import SERVER_URL
+from dotenv import load_dotenv
 import ui_helper as ui
+
+# Load environment variables
+load_dotenv()
+API_SECRET_KEY = os.getenv("API_SECRET_KEY")
 
 # Eye detector
 eye_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_eye.xml')
