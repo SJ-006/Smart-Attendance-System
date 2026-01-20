@@ -12,6 +12,6 @@ CLASS_START_TIME = time(9, 0) # 9:00 AM
 LATE_THRESHOLD_MINUTES = 15   # Late after 9:15 AM
 
 # --- SECURITY ---
-# Must match the key in your .env file
-API_SECRET_KEY = "college_attendance_2024_secret"
+# API_SECRET_KEY is now stored in .env file for security
+# Load it using: os.getenv("API_SECRET_KEY")
 INTRUDER_THRESHOLD = 3  # Alert after 3 unknown sightings
