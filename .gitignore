@@ -4,8 +4,6 @@
 # Ignore Student Photos (Privacy)
 server/dataset/
 server/intruders/
-server/server/dataset/
-server/server/intruders/
 
 # Ignore local logs and data
 logs/*.csv
