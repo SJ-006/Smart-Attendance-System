@@ -2,8 +2,8 @@
 .env
 
 # Ignore Student Photos (Privacy)
-server/dataset/
-server/intruders/
+**/dataset/
+**/intruders/
 
 # Ignore local logs and data
 logs/*.csv
