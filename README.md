@@ -107,5 +107,3 @@ For production, consider:
 - If `face_recognition` fails to install, install Visual C++ Build Tools and retry.
 - If email sending fails, confirm App Passwords are enabled and `.env` is set.
 
-## License
-Add a license file before publishing the repository.
